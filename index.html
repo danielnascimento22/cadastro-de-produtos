@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <img src="imagens/logi.svg" alt="ERRO!" width="100">
+        <h1>Controle de Produtos</h1>
+    </header>
+
+    <main>
+        <h2> Produtos</h2>
+        <span>Lista de produtos</span>
+        <div class="card">
+            <div class="inputpd">
+                <label>Nome do Produto</label>
+                <input type="text" id="pdnome" placeholder="Insira o nome do produto">
+            </div>
+            <div class="inputpd">
+                <label>Preço do Produto</label>
+                <input type="text" id="pdpreco" placeholder="R$ 00.00">
+            </div>
+            <button onclick="produto.Adicionar()">Cadastrar</button>
+            <button onclick="produto.Cancelar()">Cancelar</button>
+
+        </div>
+        <div class="conteudo">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NOME DO PRODUTO</th>
+                        <th>PREÇO</th>
+                        <th>REMOVER</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                   
+                </tbody>
+            </table>
+
+        </div>
+
+    </main>
+<script src="index.js"></script>
+</body>
+</html>
